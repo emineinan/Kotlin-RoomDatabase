@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".StudyActivity">
+
+
+    <EditText
+        android:id="@+id/etCourse"
+        android:layout_width="331dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66dp"
+        android:layout_marginBottom="44dp"
+        android:hint="Course"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:background="@drawable/custom_input"
+        app:layout_constraintBottom_toTopOf="@+id/etStudyPlan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etStudyPlan"
+        android:layout_width="331dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:hint="Plan"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:background="@drawable/custom_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCourse" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="130dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="247dp"
+        android:layout_marginBottom="42dp"
+        android:onClick="add"
+        android:padding="10dp"
+        android:text="SAVE"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
